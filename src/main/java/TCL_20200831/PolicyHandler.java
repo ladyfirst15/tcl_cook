@@ -25,6 +25,7 @@ public class PolicyHandler{
 
             Cook cook = new Cook();
             cook.setOrderId(ordered.getId());
+            cook.setCustomerId(ordered.getCustomerId());
             cook.setStatus("COOKED");
 
             cookRepository.save(cook);
